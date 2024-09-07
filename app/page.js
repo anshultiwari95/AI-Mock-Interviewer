@@ -1,8 +1,16 @@
-import { Button } from "@/components/ui/button";
-import React from "react";
+"use client";
 
-const page = () => {
-  return <Button>Hello </Button>;
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+const Page = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/sign-in");
+  }, [router]);
+
+  return null;
 };
 
-export default page;
+export default Page;
