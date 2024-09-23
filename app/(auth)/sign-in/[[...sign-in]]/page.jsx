@@ -1,9 +1,18 @@
 import { SignIn } from "@clerk/nextjs";
+import { FaGithub } from "react-icons/fa";
 
 export default function Page() {
   return (
     <section className="bg-white">
-      <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
+      <div className="relative lg:grid lg:min-h-screen lg:grid-cols-12">
+        <div className="absolute top-4 right-4 text-black text-2xl">
+          <a
+            href="https://github.com/anshultiwari95/AI-Mock-Interviewer"
+            target="_blank"
+          >
+            <FaGithub size={20} />
+          </a>
+        </div>
         <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
           <img
             alt=""
